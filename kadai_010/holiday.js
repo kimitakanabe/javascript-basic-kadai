@@ -17,15 +17,15 @@ const holidays = [
   "勤労感謝の日",
 ];
 
-// for文の場合（インデックス番号は0～15。0から1ずつ足して15までは条件成立）
-for (let i = 0; i <= 15; i += 1) {
+// for文の場合（ここではholidays.length（要素数）は16）
+for (let i = 0; i < holidays.length; i += 1) {
   console.log(holidays[i]);
 }
 
-// while文の場合（インデックス番号16未満ならtrueを返す。インクリメント演算子でnumに１足す）
+// while文の場合（numが要素数未満ならtrue、インクリメント演算子で1足す）
 let num = 0;
 
-while (num < 16) {
+while (num < holidays.length) {
   console.log(holidays[num]);
   num++;
 }
